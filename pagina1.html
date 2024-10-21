@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Página 1 - HTML</title>
+    <style>
+        .small-img {
+            max-width: 300px; /* Tamaño máximo de la imagen */
+            height: auto; /* Mantener la proporción */
+        }
+        h1 {
+            font-size: 2.5rem; /* Tamaño grande para el encabezado */
+        }
+        p {
+            font-size: 1.25rem; /* Tamaño de texto más grande para los párrafos */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Mi Proyecto</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="pagina1.html">Página 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina2.html">Página 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina3.html">Página 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Aprendiendo HTML</h1>
+        <img src="https://emaillistvalidation.com/blog/content/images/2023/09/HTML5_logo_and_wordmark.svg.png" alt="HTML Logo" class="small-img mb-4">
+        <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web.</p>
+        <p>HTML se utiliza para estructurar el contenido en la web, definiendo elementos como encabezados, párrafos, enlaces, imágenes, y mucho más.</p>
+        <p>Con HTML, puedes construir la base de tu sitio web y luego agregar estilos con CSS y funcionalidades con JavaScript.</p>
+
+        <h2>Ejemplos de HTML</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Ejemplo 1</h3>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.eGHphJGUG5oxW3JRMvpv5wHaFC&pid=Api&P=0&h=180" alt="Ejemplo 1" class="small-img mb-4">
+            </div>
+            <div class="col-md-4">
+                <h3>Ejemplo 2</h3>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.qLUD2nTOvL6O-nbWl8jcHgHaDA&pid=Api&P=0&h=180" alt="Ejemplo 2" class="small-img mb-4">
+            </div>
+        </div>
+
+        <!-- Botón para ver más ejemplos -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Ver más ejemplos
+        </button>
+
+        <!-- Modal para ejemplos -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más Ejemplos de HTML</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Ejemplo 1:</h6>
+                        <img src="http://2.bp.blogspot.com/-X3Z-08j-y9A/UOYBVWxg83I/AAAAAAAAEwE/i-M6B-voHL0/s1600/xmp.jpg" class="small-img mb-4" alt="Ejemplo 1">
+                        <h6>Ejemplo 2:</h6>
+                        <img src="https://blog.hubspot.es/hubfs/media/ejemplohtmlcolortexto.png" class="small-img mb-4" alt="Ejemplo 2">
+                        <h6>Ejemplo 3:</h6>
+                        <img src="http://1.bp.blogspot.com/-oJHmkTkxMYE/VQSC_U2BeMI/AAAAAAAABEo/MlNL_qX3ujM/s1600/dos-parrafos-sublime-text-2.gif" class="small-img mb-4" alt="Ejemplo 3">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón para aprender más sobre HTML -->
+        <button type="button" class="btn btn-info mt-3" data-toggle="modal" data-target="#htmlInfoModal">
+            Aprender más sobre HTML
+        </button>
+
+        <!-- Modal para información sobre HTML -->
+        <div class="modal fade" id="htmlInfoModal" tabindex="-1" aria-labelledby="htmlInfoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="htmlInfoModalLabel">Más Información sobre HTML</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>¿Qué es HTML?</h6>
+                        <p>HTML es un lenguaje de marcado que se utiliza para crear la estructura de las páginas web. Permite a los desarrolladores definir distintos elementos de una página como títulos, párrafos, imágenes, enlaces, y más.</p>
+                        <h6>Características Principales:</h6>
+                        <ul>
+                            <li>HTML es fácil de aprender y utilizar.</li>
+                            <li>Es la base de la mayoría de las páginas web en Internet.</li>
+                            <li>HTML5 introdujo nuevas etiquetas y funcionalidades, como video y audio.</li>
+                        </ul>
+                        <h6>Ejemplo de código HTML:</h6>
+                        <pre><code>&lt;html&gt;<br>
+  &lt;head&gt;&lt;/head&gt;<br>
+  &lt;body&gt;<br>
+    &lt;h1&gt;Hola Mundo&lt;/h1&gt;<br>
+  &lt;/body&gt;<br>
+&lt;/html&gt;</code></pre>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

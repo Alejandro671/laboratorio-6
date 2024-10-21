@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Página 2 - CSS</title>
+    <style>
+        .small-img {
+            max-width: 300px; /* Tamaño máximo de la imagen */
+            height: auto; /* Mantener la proporción */
+        }
+        h1 {
+            font-size: 2.5rem; /* Tamaño grande para el encabezado */
+        }
+        p {
+            font-size: 1.25rem; /* Tamaño de texto más grande para los párrafos */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Mi Proyecto</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Página 1</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="pagina2.html">Página 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina3.html">Página 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Aprendiendo CSS</h1>
+        <img src="https://1.bp.blogspot.com/-m4TTXg7Oof4/XlJFOC9iQmI/AAAAAAAAACc/gjl4x37MVFIH7th8Y1xmelomiX4rYRwewCLcBGAsYHQ/s1600/css3.png" alt="CSS Logo" class="small-img mb-4">
+        <p>CSS (Cascading Style Sheets) es un lenguaje utilizado para dar estilo a las páginas web.</p>
+        <p>CSS permite aplicar colores, fuentes, márgenes y otros estilos a los elementos HTML.</p>
+        <p>Con CSS, puedes hacer que tus páginas sean más atractivas y fáciles de leer.</p>
+
+        <h2>Ejemplos de CSS</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Ejemplo 1</h3>
+                <img src="https://miro.medium.com/v2/resize:fit:471/1*uKYwbfGFzTwXr-1g7FYYow.png" alt="Ejemplo 1" class="small-img mb-4">
+            </div>
+            <div class="col-md-4">
+                <h3>Ejemplo 2</h3>
+                <img src="https://www.digitallearning.es/wp-content/uploads/2017/08/Enlazar_HojaCSS_externa.gif" alt="Ejemplo 2" class="small-img mb-4">
+            </div>
+        </div>
+
+        <!-- Botón para ver más ejemplos -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Ver más ejemplos
+        </button>
+        
+        <!-- Modal para ejemplos -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más Ejemplos de CSS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Ejemplo 1:</h6>
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.zjJiPNUMBjlt6TpzVHi3-wHaHa&pid=Api&P=0&h=180" class="small-img mb-4" alt="Ejemplo 1">
+                        <h6>Ejemplo 2:</h6>
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.ffBZgsc1qOaAymDEkYJ0FQHaHa&pid=Api&P=0&h=180" class="small-img mb-4" alt="Ejemplo 2">
+                        <h6>Ejemplo 3:</h6>
+                        <img src="https://www.jotform.com/blog/wp-content/uploads/2008/07/photo-1505685296765-3a2736de412f.jpeg" class="small-img mb-4" alt="Ejemplo 3">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón para aprender más sobre CSS -->
+        <button type="button" class="btn btn-success mt-3" data-toggle="modal" data-target="#learnMoreModal">
+            Aprender más sobre CSS
+        </button>
+
+        <!-- Modal para aprender más sobre CSS -->
+        <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="learnMoreModalLabel">Aprender más sobre CSS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>CSS se utiliza para controlar la presentación de un documento HTML, permitiendo separar el contenido de la presentación.</p>
+                        <p>Se pueden aplicar diferentes estilos a distintos dispositivos, como móviles o de escritorio, usando media queries.</p>
+                        <p>CSS también permite la creación de animaciones y transiciones, mejorando la interactividad y la experiencia del usuario.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
